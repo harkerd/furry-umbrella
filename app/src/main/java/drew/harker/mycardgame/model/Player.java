@@ -9,9 +9,9 @@ public class Player
 {
     private List<Card> sources;
     private ResourceList resources;
-    private List<Card> researchedCards;
     private int resourceCap;
+    private List<Card> researchedCards;
     private int researchCap;
     private int totalVictoryPoints;
-    private EffectsContainer effects;
+    private EffectsContainer activeEffects;
 }

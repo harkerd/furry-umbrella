@@ -5,7 +5,7 @@ public class Option
     private String title;
     private String description;
     private String imageLocation;
-    private CapPair cap;
+    private LimitCaps cap;
 
     public String getTitle()
     {

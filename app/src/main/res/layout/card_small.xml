@@ -54,34 +54,29 @@
         android:layout_alignParentBottom="true"
         android:layout_gravity="center">
 
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/card_line_small"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@id/victory_points"
+            android:layout_toLeftOf="@+id/semicircle"
+            android:background="@color/line_color"/>
 
-        <RelativeLayout android:layout_height="@dimen/card_semicircle_small"
-                        android:layout_width="match_parent"
-                        android:layout_alignParentTop="true"
-                        android:layout_above="@+id/victory_points">
+        <View
+            android:id="@+id/semicircle"
+            android:layout_width="@dimen/card_oval_width_small"
+            android:layout_height="@dimen/card_oval_height_small"
+            android:background="@drawable/vp_oval_small"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true" />
 
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/card_line_small"
-                android:layout_alignParentLeft="true"
-                android:layout_toLeftOf="@+id/semicircle"
-                android:background="@color/line_color"/>
-
-            <View
-                android:id="@+id/semicircle"
-                android:layout_width="@dimen/card_semicircle_small"
-                android:layout_height="@dimen/card_semicircle_small"
-                android:layout_centerInParent="true"
-                android:background="@drawable/semicirlce"/>
-
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/card_line_small"
-                android:layout_alignParentRight="true"
-                android:layout_toRightOf="@+id/semicircle"
-                android:background="@color/line_color"/>
-
-        </RelativeLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/card_line_small"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/victory_points"
+            android:layout_toRightOf="@+id/semicircle"
+            android:background="@color/line_color"/>
 
         <TextView
             android:id="@+id/victory_points"

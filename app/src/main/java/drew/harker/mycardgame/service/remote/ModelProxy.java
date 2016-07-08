@@ -1,4 +1,4 @@
-package drew.harker.mycardgame.server.remote;
+package drew.harker.mycardgame.service.remote;
 
 /**
  * This class will extract the necessary modifications for the model from the server response and

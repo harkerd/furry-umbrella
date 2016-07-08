@@ -10,6 +10,7 @@ public abstract class Card
     public abstract String getDescription();
     public abstract ResourceList getCost();
     public abstract int getVictoryPoints();
+    public abstract CardType getCardType();
+    public abstract boolean isSpecial();
     public abstract List<Effect> getEffects();
-    public abstract CardType getType();
 }

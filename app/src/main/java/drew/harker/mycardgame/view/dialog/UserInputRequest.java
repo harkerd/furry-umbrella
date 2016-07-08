@@ -7,7 +7,7 @@ public class UserInputRequest
     private String title;
     private List<Option> options;
     private SelectionCallback callback;
-    private CapPair totalCap;
+    private LimitCaps totalCap;
     private boolean canBeCanceled;
 
     public boolean isCancelable()

@@ -1,4 +1,4 @@
-package drew.harker.mycardgame.model.cards.collection;
+package drew.harker.mycardgame.model.cards.collection.t1;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ import drew.harker.mycardgame.model.ResourceType;
 import drew.harker.mycardgame.model.cards.Card;
 import drew.harker.mycardgame.model.cards.CardType;
 import drew.harker.mycardgame.model.cards.Effect;
-import drew.harker.mycardgame.model.cards.EffectTiming;
+import drew.harker.mycardgame.model.cards.EffectType;
 
 public class Hunter extends Card
 {
@@ -45,31 +45,44 @@ public class Hunter extends Card
     }
 
     @Override
+    public CardType getCardType()
+    {
+        return CardType.PERSON;
+    }
+
+    @Override
+    public boolean isSpecial()
+    {
+        return false;
+    }
+
+    @Override
     public List<Effect> getEffects()
     {
-        Effect effect = new Effect()
-        {
-            @Override
-            public EffectTiming getTiming()
-            {
-                return EffectTiming.START;
-            }
-
-            @Override
-            public void activate()
-            {
-                EffectController.gain(ResourceType.FOOD, 2);
-            }
-        };
+        Effect effect = new HunterEffect();
 
         List<Effect> effects = new ArrayList<>();
         effects.add(effect);
         return effects;
     }
 
-    @Override
-    public CardType getType()
+    private class HunterEffect extends Effect
     {
-        return CardType.PERSON;
+        private HunterEffect()
+        {
+            super();
+        }
+
+        @Override
+        public EffectType getTiming()
+        {
+            return EffectType.START;
+        }
+
+        @Override
+        public void activate()
+        {
+            EffectController.gain(ResourceType.FOOD, 2);
+        }
     }
 }
