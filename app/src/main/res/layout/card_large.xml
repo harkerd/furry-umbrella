@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="@dimen/card_width_large"
+                android:layout_height="@dimen/card_height_large"
+                android:background="#ff0000">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_margin_large"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="@dimen/card_text_large"
+            android:textColor="@color/text"
+            android:text="TITLE"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_line_large"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_color"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_margin_large"
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/footer"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_margin_large"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center">
+
+
+        <RelativeLayout android:layout_height="@dimen/card_semicircle_large"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_above="@+id/victory_points">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/card_line_large"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/semicircle"
+                android:background="@color/line_color"/>
+
+            <View
+                android:id="@+id/semicircle"
+                android:layout_width="@dimen/card_semicircle_large"
+                android:layout_height="@dimen/card_semicircle_large"
+                android:layout_centerInParent="true"
+                android:background="@drawable/semicirlce"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/card_line_large"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/semicircle"
+                android:background="@color/line_color"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/victory_points"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="@dimen/card_text_large"
+            android:textColor="@color/text"
+            android:text="1"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

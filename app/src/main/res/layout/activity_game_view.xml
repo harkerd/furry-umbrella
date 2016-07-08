@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#0099cc"
+             tools:context="drew.harker.mycardgame.view.GameView">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="center_horizontal|top">
+
+        <ImageView
+            android:id="@+id/viewPlayersButton"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@android:drawable/ic_menu_preferences"/>
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>
