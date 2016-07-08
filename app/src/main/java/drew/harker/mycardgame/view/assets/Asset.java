@@ -10,5 +10,8 @@ public abstract class Asset extends View
         super(context);
     }
 
+    /**
+     * This method is for syncing the model to the view. 
+     */
     public abstract void refresh();
 }

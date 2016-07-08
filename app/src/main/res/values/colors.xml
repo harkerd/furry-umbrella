@@ -7,4 +7,5 @@
 
     <color name="line_color">#000000</color>
     <color name="text">#000000</color>
+    <color name="card">#fffff0</color>
 </resources>

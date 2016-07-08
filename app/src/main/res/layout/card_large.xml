@@ -3,7 +3,7 @@
                 android:orientation="vertical"
                 android:layout_width="@dimen/card_width_large"
                 android:layout_height="@dimen/card_height_large"
-                android:background="#ff0000">
+                android:background="@color/card">
 
     <RelativeLayout
         android:id="@+id/header"
@@ -30,26 +30,31 @@
     </RelativeLayout>
 
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/card_margin_large"
+        android:orientation="vertical"
         android:layout_below="@+id/header"
         android:layout_above="@+id/footer"
         android:layout_gravity="center">
 
         <ImageView
             android:id="@+id/image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_width="@dimen/card_image_width_large"
+            android:layout_height="@dimen/card_image_height_large"
+            android:gravity="center"
+            android:background="@mipmap/no_image_found"/>
 
         <TextView
             android:id="@+id/description"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
+            android:layout_below="@+id/image"
             android:layout_centerInParent="true"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:text="The text will go here."/>
 
-    </RelativeLayout>
+    </LinearLayout>
 
 
     <RelativeLayout
@@ -91,7 +96,7 @@
             android:gravity="center"
             android:textSize="@dimen/card_text_large"
             android:textColor="@color/text"
-            android:text="1"/>
+            android:text="00"/>
 
     </RelativeLayout>
 

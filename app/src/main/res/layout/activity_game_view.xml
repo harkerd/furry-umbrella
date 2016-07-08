@@ -17,9 +17,45 @@
             android:layout_height="@dimen/button_size"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
-            android:src="@android:drawable/ic_menu_preferences"/>
+            android:src="@drawable/settings_gear"/>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <include layout="@layout/card_small" />
+                <include layout="@layout/card_small" />
+                <include layout="@layout/card_small" />
+                <include layout="@layout/card_small" />
+                <include layout="@layout/card_small" />
+            </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <include layout="@layout/card_small" />
+                <include layout="@layout/card_small" />
+                <include layout="@layout/card_small" />
+                <include layout="@layout/card_small" />
+                <include layout="@layout/card_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <include layout="@layout/card_small" />
+                <include layout="@layout/card_small" />
+                <include layout="@layout/card_small" />
+                <include layout="@layout/card_small" />
+                <include layout="@layout/card_small" />
+            </LinearLayout>
+        </LinearLayout>
 
     </RelativeLayout>
 
