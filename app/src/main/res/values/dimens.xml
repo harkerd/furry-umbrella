@@ -4,7 +4,8 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
 
-    <dimen name="button_size">45dp</dimen>
+    <dimen name="card_line_small">1dp</dimen>
+    <dimen name="card_line_large">2dp</dimen>
 
 
     <dimen name="card_width_small">67dp</dimen>
@@ -13,7 +14,6 @@
     <dimen name="card_text_small">10dp</dimen>
     <dimen name="card_oval_height_small">22dp</dimen>
     <dimen name="card_oval_width_small">16dp</dimen>
-    <dimen name="card_line_small">1dp</dimen>
     <dimen name="card_image_height_small">44dp</dimen>
     <dimen name="card_image_width_small">67dp</dimen>
 
@@ -23,9 +23,10 @@
     <dimen name="card_text_large">18dp</dimen>
     <dimen name="card_oval_height_large">40dp</dimen>
     <dimen name="card_oval_width_large">30dp</dimen>
-    <dimen name="card_line_large">2dp</dimen>
     <dimen name="card_image_height_large">80dp</dimen>
     <dimen name="card_image_width_large">120dp</dimen>
+
+    <dimen name="button_size">45dp</dimen>
 
 
 </resources>
